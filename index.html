@@ -3,32 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sitio de adopción de gatos">
-    <meta name="author" content="Tu Nombre">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Adopta un Gato</title>
+    <meta name="description" content="Café con gatos frente a playa Penco">
+    <meta name="author" content="Café MichiMar Penco">
+    <title>Café con Gatos - MichiMar</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
       body {
-        background-color: #f8f9fa;
+        background: linear-gradient(135deg, #ffe0c1, #ffc1cc);
+        color: #4a3b47;
+      }
+      .navbar {
+        background-color: #ffafcc;
+      }
+      .navbar .nav-link,
+      .navbar .navbar-brand {
+        color: #fff;
+      }
+      .navbar .nav-link:hover {
+        color: #ffe0c1;
       }
       .jumbotron {
-        background-image: url('img/banner-gato.jpg'); /* Reemplazar con la ruta de tu imagen */
+        background-image: url(./imagenes/catcafe1.jpg); /* Imagen sugerida: interior cálido de cafetería con gatos */
         background-size: cover;
         background-position: center;
         color: white;
@@ -38,43 +35,74 @@
   </head>
   <body>
 
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">MichiMar Café</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="pagina2.html">Conoce a nuestros gatos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Menú</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <main>
   <div class="container py-4">
     <header class="pb-3 mb-4 border-bottom">
       <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
-        <img src="img/logo-gato.png" alt="Logo" width="40" height="40" class="me-2"> <!-- Agregar logo -->
-        <span class="fs-4">Adopta un Gato</span>
+        <img src="./imagenes/Logo2.png" alt="Logo" width="50" height="50" class="me-2">
+        <span class="fs-4">MichiMar Café</span>
       </a>
     </header>
 
     <div class="p-5 mb-4 rounded-3 jumbotron">
       <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Adopta un gato, cambia una vida</h1>
-        <p class="col-md-8 fs-4">Te damos la bienvenida a nuestro sitio de adopción. Aquí podés conocer a nuestros gatos y aprender cómo darles un hogar.</p>
-        <a class="btn btn-primary btn-lg" href="pagina2.html">Ver gatos en adopción</a>
-        <a class="btn btn-light btn-lg" href="pagina3.html">¿Cómo adoptar?</a>
+        <h1 class="display-5 fw-bold">Un café con gatos frente al mar</h1>
+        <p class="col-md-8 fs-4">Disfruta pasteles, café y la compañía de nuestros adorables gatos en Penco. Una experiencia mágica frente a la costa.</p>
+        <a class="btn btn-light btn-lg" href="pagina2.html">Conoce a los michis</a>
       </div>
     </div>
 
-    <div class="row align-items-md-stretch">
-      <div class="col-md-6">
-        <div class="h-100 p-5 text-white bg-secondary rounded-3">
-          <h2>¿Por qué adoptar?</h2>
-          <p>Adoptar un gato es salvar una vida y ganar un compañero leal. Muchos esperan una segunda oportunidad.</p>
-          <a class="btn btn-outline-light" href="pagina3.html">Conocé el proceso</a>
-        </div>
+    <section id="menu" class="my-5">
+      <div class="text-center">
+        <h2>Menú Destacado</h2>
+        <p>Café de especialidad, pasteles artesanales y snacks adorables.</p>
+        <img src="img/menu-cafe.jpg" class="img-fluid rounded shadow" alt="Menú de la cafetería">
       </div>
+    </section>
+
+    <section class="row align-items-md-stretch my-5">
       <div class="col-md-6">
         <div class="h-100 p-5 bg-light border rounded-3">
-          <h2>Conocé a nuestros gatos</h2>
-          <p>Explorá el perfil de cada gatito en busca de familia. Tenemos gatos para todos los hogares y estilos de vida.</p>
-          <a class="btn btn-outline-secondary" href="pagina2.html">Ver perfiles</a>
+          <h2>Una experiencia única</h2>
+          <p>Pasa una tarde relajada con nuestros gatos mientras disfrutás de una vista hermosa al mar. ¡Ideal para venir en familia o con amig@s!</p>
         </div>
       </div>
-    </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white" style="background-color: #ffb3ab;">
+          <h2>Estamos en Penco</h2>
+          <p>Ubicados justo frente a la costa, te esperamos con un ambiente acogedor, música suave y ronroneos.</p>
+        </div>
+      </div>
+    </section>
 
-    <footer class="pt-3 mt-4 text-muted border-top text-center">
-      &copy; 2025 Adopta un Gato
+    <footer id="contacto" class="pt-4 mt-5 border-top text-center text-white" style="background-color: #ffafcc;">
+      <p class="mb-1">&copy; 2025 MichiMar Café</p>
+      <p class="mb-0">Penco, Región del Biobío, frente al mar</p>
+      <p class="mb-0">Teléfono: +56 9 1234 5678 | <a href="mailto:contacto@michimar.cl" class="text-white text-decoration-underline">contacto@michimar.cl</a></p>
+      <p class="mb-0">TikTok: <a href="https://www.tiktok.com/@michimar" class="text-white">@michimar</a></p>
+      <p class="mb-0">Instagram: <a href="https://instagram.com/michimar.penco" class="text-white">@michimar.penco</a></p>
     </footer>
   </div>
 </main>
